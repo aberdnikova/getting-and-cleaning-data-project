@@ -50,6 +50,6 @@ tidy_data_mean<- data %>% group_by(subject, activity) %>% summarize(across(every
 
 #save the ouptput file 
 
-write.table(tidy_data_mean,"./tidy_data_set.txt")
+write.table(tidy_data_mean,"./tidy_data_set.txt",row.name=FALSE)
 
 
